@@ -198,7 +198,7 @@
 
 
     <!-- Hero -->
-    <section class="vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden"
+    <section class="vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden mb-md-3 mb-lg-5 pb-5"
              style="background-image: url(assets/img/landing/intro/hero/bg.jpg);" data-bs-theme="dark">
         <div class="container vh-100">
             <div class="row flex-nowrap vh-100">
@@ -233,84 +233,172 @@
         </div>
     </section>
 
-
     <!-- Main features (Slider on narrow scrreens) -->
-    <section class="container pt-5">
-        <div class="swiper mt-n3 mt-md-0 pt-md-4 pt-lg-5 mx-n2" data-swiper-options='{
-          "slidesPerView": 1,
-          "spaceBetween": 8,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "navigation": {
-            "prevEl": "#prev-news",
-            "nextEl": "#next-news"
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 2
-            },
-            "700": {
-              "slidesPerView": 3
-            },
-            "1000": {
-              "slidesPerView": 3
-            }
-          }
-        }'>
-            <div class="swiper-wrapper">
+    <!-- Industries -->
+    <section class="container pt-5 pt-lg-0">
+        <h2 class="h1 text-center pb-3 pb-lg-4">About Us</h2>
 
-                <!-- Item -->
-                <div class="swiper-slide h-auto pb-3">
-                    <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
-                        <!--<lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-1-light.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>
-                        <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-1-dark.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>-->
-                        <!-- replace lottie-player with image -->
-                        <img src="assets/img/wi.png" class="d-block mx-auto mt-4 mb-2" width="180" alt="Feature 1">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-nowrap active" id="education-tab" data-bs-toggle="tab"
+                        data-bs-target="#education" type="button" role="tab" aria-controls="education"
+                        aria-selected="true">
+                    <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
+                    About KE
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-nowrap" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce"
+                        type="button" role="tab" aria-controls="ecommerce" aria-selected="false">
+                    <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
+                    Markets We Serve
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-nowrap" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports"
+                        type="button" role="tab" aria-controls="sports" aria-selected="false">
+                    <i class="bx bx-run fs-xl opacity-60 me-2"></i>
+                    Our Capabilities
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-nowrap" id="construction-tab" data-bs-toggle="tab"
+                        data-bs-target="#construction" type="button" role="tab" aria-controls="construction"
+                        aria-selected="false">
+                    <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
+                    Our Advantage
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-nowrap" id="medicine-tab" data-bs-toggle="tab" data-bs-target="#medicine"
+                        type="button" role="tab" aria-controls="medicine" aria-selected="false">
+                    <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
+                    Our Customers
+                </button>
+            </li>
+        </ul>
 
-                        <div class="card-body fs-lg fw-semibold text-center">Wisconsin Proud</div>
+        <!-- Tab panes -->
+        <div class="tab-content bg-secondary rounded-3 py-4">
+
+            <!-- Education -->
+            <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Powering Excellence Since 1971</h3>
+                        <p>Kuehl Electric, Inc. started contracting in 1971, and, in its second generation of family
+                            ownership incorporated in 1992.
+
+                            Kuehl Electric, Inc. takes pride in being a customer oriented supplier of electrical
+                            installations and services. We work hard to exceed our customer’s expectations, and aim to
+                            deliver high-quality workmanship, on time, every time. Thanks to our commitments, we enjoy a
+                            large and loyal customer base through out Wisconsin and the upper Midwest.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/kei_logo.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
                     </div>
                 </div>
-
-                <!-- Item -->
-                <div class="swiper-slide h-auto pb-3">
-                    <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
-                        <!--<lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-2-light.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>
-                        <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-2-dark.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>-->
-                        <!-- replace lottie-player with image -->
-                        <img src="assets/img/kuelbadge2.png" class="d-block mx-auto mt-4 mb-2" width="180"
-                             alt="Feature 2">
-                        <div class="card-body fs-lg fw-semibold text-center">Standing Strong</div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="swiper-slide h-auto pb-3">
-                    <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
-                        <!--<lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-3-light.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>
-                        <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-3-dark.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>-->
-                        <!-- replace lottie-player with image -->
-                        <img src="assets/img/customer.png" class="d-block mx-auto mt-4 mb-2" width="180"
-                             alt="Feature 3">
-
-                        <div class="card-body fs-lg fw-semibold text-center">Satisfied Customers</div>
-                    </div>
-                </div>
-
-                <!-- Item
-                <div class="swiper-slide h-auto pb-3">
-                  <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
-                    <lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-4-light.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>
-                    <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-4-dark.json" background="transparent" speed="1.25" loop style="width: 180px;"></lottie-player>
-                    <div class="card-body fs-lg fw-semibold text-center">Free Lifetime Updates</div>
-                  </div>
-                </div>
-                -->
             </div>
 
-            <!-- Pagination (bullets) -->
-            <div class="swiper-pagination position-relative bottom-0 mt-2"></div>
+            <!-- E-Commerce -->
+            <div class="tab-pane fade" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">We Serve</h3>
+                        <p>Curabitur auctor quam ut iaculis suscipit. Morbi ullamcorper tellus eu purus dictum
+                            convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam
+                            molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/ecommerce.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports -->
+            <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Sports</h3>
+                        <p>Etiam vehicula commodo nunc, ut tincidunt risus aliquam sit amet. Vivamus ut velit ut odio
+                            malesuada tincidunt ut non eros. Curabitur vel quam varius, ullamcorper mi quis, ultrices
+                            eros. Nam eget mi ut diam elementum facilisis vehicula eget augue.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/sports.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Construction -->
+            <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Construction</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, nunc in iaculis
+                            vestibulum, nunc ex convallis est, ut viverra velit sapien ac erat. Vivamus aliquet mi
+                            tellus, vel viverra ex blandit sed. Sed blandit lobortis risus. Aliquam blandit cursus ex
+                            sed iaculis.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/construction.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medicine -->
+            <div class="tab-pane fade" id="medicine" role="tabpanel" aria-labelledby="medicine-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Medicine</h3>
+                        <p>In vel nulla ac enim pellentesque tristique vel non dui. Integer vulputate ex leo, in
+                            accumsan purus consectetur quis. Cras scelerisque orci vel dapibus volutpat. In et
+                            consectetur enim. Maecenas lobortis viverra tortor, quis fermentum sem volutpat sit
+                            amet.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/medicine.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate -->
+            <div class="tab-pane fade" id="real-estate" role="tabpanel" aria-labelledby="real-estate-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Real Estate</h3>
+                        <p>Donec consequat nibh at urna tincidunt tempor. Integer quis lobortis felis. Nulla id quam
+                            vestibulum, aliquam mauris vitae, auctor ex. Aliquam augue nulla, faucibus sed lacus ac,
+                            placerat elementum nisi. Curabitur enim nunc, dictum et accumsan.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/real-estate.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wellness -->
+            <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                        <h3 class="mb-lg-4">Wellness</h3>
+                        <p>Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque
+                            malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Aenean varius lectus lectus.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                        <img src="assets/img/services/industries/wellness.jpg"
+                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -489,175 +577,6 @@
                         Learn more
                         <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Industries -->
-    <section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
-        <h2 class="h1 text-center pb-3 pb-lg-4">About Us</h2>
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-nowrap active" id="education-tab" data-bs-toggle="tab"
-                        data-bs-target="#education" type="button" role="tab" aria-controls="education"
-                        aria-selected="true">
-                    <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
-                    About KE
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-nowrap" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce"
-                        type="button" role="tab" aria-controls="ecommerce" aria-selected="false">
-                    <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
-                    Markets We Serve
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-nowrap" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports"
-                        type="button" role="tab" aria-controls="sports" aria-selected="false">
-                    <i class="bx bx-run fs-xl opacity-60 me-2"></i>
-                    Our Capabilities
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-nowrap" id="construction-tab" data-bs-toggle="tab"
-                        data-bs-target="#construction" type="button" role="tab" aria-controls="construction"
-                        aria-selected="false">
-                    <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
-                    Our Advantage
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-nowrap" id="medicine-tab" data-bs-toggle="tab" data-bs-target="#medicine"
-                        type="button" role="tab" aria-controls="medicine" aria-selected="false">
-                    <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
-                    Our Customers
-                </button>
-            </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content bg-secondary rounded-3 py-4">
-
-            <!-- Education -->
-            <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Powering Excellence Since 1971</h3>
-                        <p>Kuehl Electric, Inc. started contracting in 1971, and, in its second generation of family
-                            ownership incorporated in 1992.
-
-                            Kuehl Electric, Inc. takes pride in being a customer oriented supplier of electrical
-                            installations and services. We work hard to exceed our customer’s expectations, and aim to
-                            deliver high-quality workmanship, on time, every time. Thanks to our commitments, we enjoy a
-                            large and loyal customer base through out Wisconsin and the upper Midwest.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/kei_logo.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- E-Commerce -->
-            <div class="tab-pane fade" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">We Serve</h3>
-                        <p>Curabitur auctor quam ut iaculis suscipit. Morbi ullamcorper tellus eu purus dictum
-                            convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam
-                            molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/ecommerce.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sports -->
-            <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Sports</h3>
-                        <p>Etiam vehicula commodo nunc, ut tincidunt risus aliquam sit amet. Vivamus ut velit ut odio
-                            malesuada tincidunt ut non eros. Curabitur vel quam varius, ullamcorper mi quis, ultrices
-                            eros. Nam eget mi ut diam elementum facilisis vehicula eget augue.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/sports.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Construction -->
-            <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Construction</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, nunc in iaculis
-                            vestibulum, nunc ex convallis est, ut viverra velit sapien ac erat. Vivamus aliquet mi
-                            tellus, vel viverra ex blandit sed. Sed blandit lobortis risus. Aliquam blandit cursus ex
-                            sed iaculis.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/construction.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medicine -->
-            <div class="tab-pane fade" id="medicine" role="tabpanel" aria-labelledby="medicine-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Medicine</h3>
-                        <p>In vel nulla ac enim pellentesque tristique vel non dui. Integer vulputate ex leo, in
-                            accumsan purus consectetur quis. Cras scelerisque orci vel dapibus volutpat. In et
-                            consectetur enim. Maecenas lobortis viverra tortor, quis fermentum sem volutpat sit
-                            amet.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/medicine.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Real Estate -->
-            <div class="tab-pane fade" id="real-estate" role="tabpanel" aria-labelledby="real-estate-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Real Estate</h3>
-                        <p>Donec consequat nibh at urna tincidunt tempor. Integer quis lobortis felis. Nulla id quam
-                            vestibulum, aliquam mauris vitae, auctor ex. Aliquam augue nulla, faucibus sed lacus ac,
-                            placerat elementum nisi. Curabitur enim nunc, dictum et accumsan.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/real-estate.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Wellness -->
-            <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
-                <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-                    <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                        <h3 class="mb-lg-4">Wellness</h3>
-                        <p>Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque
-                            malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum
-                            dolor sit amet, consectetur adipiscing elit. Aenean varius lectus lectus.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                        <img src="assets/img/services/industries/wellness.jpg"
-                             class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
-                    </div>
                 </div>
             </div>
         </div>
