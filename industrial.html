@@ -265,112 +265,8 @@
                         </div>
                     </div>
 
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            var mySwiper = new Swiper('.swiper', {
-                                spaceBetween: 24,
-                                loop: true,
-                                pagination: {
-                                    el: '.swiper-pagination',
-                                    clickable: true,
-                                },
-                                navigation: {
-                                    prevEl: '#testimonials-prev',
-                                    nextEl: '#testimonials-next',
-                                },
-                                on: {
-                                    slideChange: function () {
-                                        var currentIndex = this.realIndex; // Swiper's current slide index
-                                        //console.log("Current slide index: " + currentIndex);
-
-                                        // Example: Perform actions based on currentIndex
-                                        switch (currentIndex) {
-                                            case 0:
-                                                // Actions for slide 1
-                                                console.log("Slide 1");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "Facility Power Distribution";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/1.png')";
-                                                break;
-                                            case 1:
-                                                // Actions for slide 2
-                                                console.log("Slide 2");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "Buss Duct";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/2.png')";
-                                                break;
-                                            case 2:
-                                                // Actions for slide 3
-                                                console.log("Slide 3");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "Machine Feeder’s";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/3.png')";
-                                                break;
-                                            case 3:
-                                                // Actions for slide 4
-                                                console.log("Slide 4");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "A/C and D/C Drives and Line-Ups";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/4.png')";
-                                                break;
-                                            case 4:
-                                                // Actions for slide 5
-                                                console.log("Slide 5");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "MCC’s";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/5.png')";
-                                                break;
-                                            case 5:
-                                                // Actions for slide 6
-                                                console.log("Slide 6");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "Custom Machine Control";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/6.png')";
-                                                break;
-                                            case 6:
-                                                // Actions for slide 7
-                                                console.log("Slide 7");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "PLC’s";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/7.png')";
-                                                break;
-                                            case 7:
-                                                // Actions for slide 8
-                                                console.log("Slide 8");
-                                                // update text
-                                                document.getElementById("subjectText").innerHTML = "Medium Voltage Substations and Circuits";
-                                                // update image
-                                                document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/8.png')";
-                                                break;
-
-                                        }
-                                    },
-                                },
-                            });
-                        });
-                    </script>
-
-
                     <!-- Slider -->
-                    <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
-                            "spaceBetween": 24,
-                            "loop": true,
-                            "pagination": {
-                              "el": ".swiper-pagination",
-                              "clickable": true
-                            },
-                            "navigation": {
-                              "prevEl": "#testimonials-prev",
-                              "nextEl": "#testimonials-next"
-                            }
-                          }'>
+                    <div class="swiper mx-0 mb-md-n2 mb-xxl-n3">
                         <div class="swiper-wrapper">
 
                             <!-- Item -->
@@ -664,5 +560,97 @@
 
 <!-- Main Theme Script -->
 <script src="assets/js/theme.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper('.swiper', {
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                prevEl: '#testimonials-prev',
+                nextEl: '#testimonials-next',
+            },
+            on: {
+                slideChange: function () {
+                    var currentIndex = this.realIndex; // Swiper's current slide index
+                    console.log("Current slide index: " + currentIndex);
+
+                    // Example: Perform actions based on currentIndex
+                    switch (currentIndex) {
+                        case 0:
+                            // Actions for slide 1
+                            console.log("Slide 1");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "Facility Power Distribution";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/1.png')";
+                            break;
+                        case 1:
+                            // Actions for slide 2
+                            console.log("Slide 2");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "Buss Duct";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/2.png')";
+                            break;
+                        case 2:
+                            // Actions for slide 3
+                            console.log("Slide 3");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "Machine Feeder’s";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/3.png')";
+                            break;
+                        case 3:
+                            // Actions for slide 4
+                            console.log("Slide 4");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "A/C and D/C Drives and Line-Ups";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/4.png')";
+                            break;
+                        case 4:
+                            // Actions for slide 5
+                            console.log("Slide 5");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "MCC’s";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/5.png')";
+                            break;
+                        case 5:
+                            // Actions for slide 6
+                            console.log("Slide 6");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "Custom Machine Control";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/6.png')";
+                            break;
+                        case 6:
+                            // Actions for slide 7
+                            console.log("Slide 7");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "PLC’s";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/7.png')";
+                            break;
+                        case 7:
+                            // Actions for slide 8
+                            console.log("Slide 8");
+                            // update text
+                            document.getElementById("subjectText").innerHTML = "Medium Voltage Substations and Circuits";
+                            // update image
+                            document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/8.png')";
+                            break;
+
+                    }
+                },
+            },
+        });
+    });
+</script>
 </body>
 </html>

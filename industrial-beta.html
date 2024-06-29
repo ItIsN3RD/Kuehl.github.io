@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <title>Kuehl Electric, Inc. - Home</title>
+
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Kuehl Electric INC - Electrical Contractor">
+  <meta name="keywords"
+        content="Electrical Contractor, Licensed Electrician, Residential Electrical Services, Commercial Electrical Services, Industrial Electrical Services, Emergency Electrician, Electrical Repair, Electrical Installation, Electrical Wiring, Electrical Inspection, Electrical Maintenance, Energy Efficient Solutions, Electrical Upgrades, Electrical Safety, Local Electrician, Affordable Electrician">
+
+  <meta name="author" content="Steve Kuehl">
+
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Theme switcher (color modes) -->
+  <script src="assets/js/theme-switcher.js"></script>
+
+  <!-- Favicon
+    <link rel="shortcut icon" href="assets/images/">-->
+
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+  <!-- Page loading styles -->
+  <style>
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    [data-bs-theme="dark"] .page-loading {
+      background-color: #0b0f19;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active > .page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner > span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #9397ad;
+    }
+
+    [data-bs-theme="dark"] .page-loading-inner > span {
+      color: #fff;
+      opacity: .6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      border: .15em solid #b4b7c9;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    [data-bs-theme="dark"] .page-spinner {
+      border-color: rgba(255, 255, 255, .4);
+      border-right-color: transparent;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <!-- Page loading scripts -->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector('.page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+</head>
+
+
+<!-- Body -->
+<body>
+
+<!-- Page loading spinner -->
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div>
+    <span>Loading...</span>
+  </div>
+</div>
+
+
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+
+
+  <!-- Navbar -->
+  <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+  <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+    <div class="container px-3">
+      <a href="index.html" class="navbar-brand pe-3">
+        <!--<img src="assets/img/logo.svg" width="47" alt="Silicon">-->
+        Kuehl Electric, Inc.
+      </a>
+      <div id="navbarNav" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="industrial.html" class="nav-link active">Industrial</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="commercial.html" class="nav-link">Commercial</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="specialized.html" class="nav-link">Specialized</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="faq.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+        <input type="checkbox" class="form-check-input" id="theme-mode">
+        <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+        <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden"
+           style="background-image: url(assets/img/landing/intro/hero/bg.jpg);" data-bs-theme="dark">
+    <div class="container vh-100">
+      <div class="row flex-nowrap vh-100">
+        <div class="col-lg-4 col-md-5 d-flex flex-column text-center text-md-start py-5">
+          <h1 class="display-3 mt-auto mb-4">Kuehl Electric, Inc.</h1>
+          <p class="lead text-light opacity-70 pb-5 mb-0 mb-md-3">Industrial, It’ll blow your mind.</p>
+
+          <!-- replace img with pill button -->
+          <a href="https://kuehlelectric.com/contactus.html?industrial"
+             class="btn rounded-pill btn-primary d-block mx-auto mx-md-0" style="width: 212px;">
+            <i class="bx bx-envelope me-2"></i>
+            Contact Us
+          </a>
+
+          <div class="position-relative d-flex align-items-center justify-content-center justify-content-md-start mb-md-4 mb-lg-5 mt-auto">
+            <div class="btn btn-icon btn-secondary rounded-circle">
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <a href="#landings" class="nav-link stretched-link text-light fw-normal opacity-80 py-2 px-3"
+               data-scroll data-scroll-offset="70">View Offerings</a>
+          </div>
+        </div>
+        <div class="d-flex flex-shrink-0 align-items-start">
+          <img src="assets/img/landing/intro/hero/screens01.png" class="rellax d-block flex-shrink-0 mt-n5"
+               width="486" height="1390" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+          <img src="assets/img/landing/intro/hero/screens02.png" class="rellax d-block flex-shrink-0 mt-5"
+               width="486" height="1470" alt="Screens" data-rellax-speed="-4" data-disable-parallax-down="md">
+          <img src="assets/img/landing/intro/hero/screens03.png" class="rellax d-block flex-shrink-0"
+               width="486" height="1480" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Landings (Grid) id="landings" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5"-->
+  <!-- Testimonials -->
+  <section class="container pt-5 mt-2 mt-md-4 mt-lg-5 mb-lg-5 pb-5">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card h-100 border-0 overflow-hidden px-md-4">
+                    <span id="subjectImage" class="position-absolute top-0 start-0 w-100 h-100 d-md-block"
+                          style="opacity: 30%; background-image: url('assets/img/facilitypowerdist.png'); background-position: center; /* Center the image */background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */"></span>
+          <div class="card-body d-flex flex-column align-items-center justify-content-center position-relative zindex-2 p-0 pb-2 p-lg-4">
+            <h2 id="subjectText" class="h1 text-center text-md-start p-lg-4">Facility Power
+              Distribution</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card border-0 shadow-sm p-4 p-xxl-5">
+          <div class="d-flex justify-content-between pb-4 mb-2">
+                <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                  <i class="bx bxs-quote-left"></i>
+                </span>
+            <div class="d-flex">
+              <button type="button" id="testimonials-prev" class="btn btn-prev btn-icon btn-sm me-2"
+                      aria-label="Previous">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" id="testimonials-next" class="btn btn-next btn-icon btn-sm ms-2"
+                      aria-label="Next">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var mySwiper = new Swiper('.swiper', {
+                spaceBetween: 24,
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  prevEl: '#testimonials-prev',
+                  nextEl: '#testimonials-next',
+                },
+                on: {
+                  slideChange: function () {
+                    var currentIndex = this.realIndex; // Swiper's current slide index
+                    //console.log("Current slide index: " + currentIndex);
+
+                    // Example: Perform actions based on currentIndex
+                    switch (currentIndex) {
+                      case 0:
+                        // Actions for slide 1
+                        console.log("Slide 1");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "Facility Power Distribution";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/1.png')";
+                        break;
+                      case 1:
+                        // Actions for slide 2
+                        console.log("Slide 2");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "Buss Duct";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/2.png')";
+                        break;
+                      case 2:
+                        // Actions for slide 3
+                        console.log("Slide 3");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "Machine Feeder’s";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/3.png')";
+                        break;
+                      case 3:
+                        // Actions for slide 4
+                        console.log("Slide 4");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "A/C and D/C Drives and Line-Ups";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/4.png')";
+                        break;
+                      case 4:
+                        // Actions for slide 5
+                        console.log("Slide 5");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "MCC’s";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/5.png')";
+                        break;
+                      case 5:
+                        // Actions for slide 6
+                        console.log("Slide 6");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "Custom Machine Control";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/6.png')";
+                        break;
+                      case 6:
+                        // Actions for slide 7
+                        console.log("Slide 7");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "PLC’s";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/7.png')";
+                        break;
+                      case 7:
+                        // Actions for slide 8
+                        console.log("Slide 8");
+                        // update text
+                        document.getElementById("subjectText").innerHTML = "Medium Voltage Substations and Circuits";
+                        // update image
+                        document.getElementById("subjectImage").style.backgroundImage = "url('assets/img/industrial/8.png')";
+                        break;
+
+                    }
+                  },
+                },
+              });
+            });
+          </script>
+
+
+          <!-- Slider -->
+          <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                            "spaceBetween": 24,
+                            "loop": true,
+                            "pagination": {
+                              "el": ".swiper-pagination",
+                              "clickable": true
+                            },
+                            "navigation": {
+                              "prevEl": "#testimonials-prev",
+                              "nextEl": "#testimonials-next"
+                            }
+                          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">Mi semper risus ultricies orci pulvinar in at enim orci.
+                      Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu
+                      sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu
+                      purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus.</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">Vestibulum nunc lectus auctor quis. Natoque lectus tortor
+                      lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi. Vitae, donec
+                      facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel dignissim
+                      morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">Ac at sed sit senectus massa. Massa ante amet ultrices
+                      magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim,
+                      vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam
+                      pellentesque sed aliquet integer massa. Orci leo tortor ornare.</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">test4</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">test5</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">test6</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">test7</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto">
+                <figure class="card h-100 position-relative border-0 bg-transparent">
+                  <blockquote class="card-body p-0 mb-0">
+                    <p class="fs-lg mb-0">test8</p>
+                  </blockquote>
+                </figure>
+              </div>
+
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative mt-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Industries -->
+  <section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
+    <h2 class="h1 text-center pb-3 pb-lg-4">Industrial Services</h2>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap active" id="foundries-tab" data-bs-toggle="tab"
+                data-bs-target="#foundries" type="button" role="tab" aria-controls="foundries"
+                aria-selected="true">
+          <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
+          Foundries
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap" id="machine_shops-tab" data-bs-toggle="tab"
+                data-bs-target="#machine_shops"
+                type="button" role="tab" aria-controls="machine_shops" aria-selected="false">
+          <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
+          Machine Shops
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap" id="mcp-tab" data-bs-toggle="tab" data-bs-target="#mcp"
+                type="button" role="tab" aria-controls="mcp" aria-selected="false">
+          <i class="bx bx-run fs-xl opacity-60 me-2"></i>
+          Manufacturing and Converting Plants
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap" id="mwpls-tab" data-bs-toggle="tab"
+                data-bs-target="#mwpls" type="button" role="tab" aria-controls="mwpls"
+                aria-selected="false">
+          <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
+          WTP and Lift Stations
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap" id="PaperMills-tab" data-bs-toggle="tab"
+                data-bs-target="#PaperMills"
+                type="button" role="tab" aria-controls="PaperMills" aria-selected="false">
+          <i class="bx bx-plus-medical fs-bse opacity-60 me-2"></i>
+          Paper Mills
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text-nowrap" id="powergeneration-tab" data-bs-toggle="tab"
+                data-bs-target="#powergeneration" type="button" role="tab" aria-controls="powergeneration"
+                aria-selected="false">
+          <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
+          Power Generation
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content bg-secondary rounded-3 py-4">
+
+      <!-- Education -->
+      <div class="tab-pane fade show active" id="foundries" role="tabpanel" aria-labelledby="foundries-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Education</h3>
+            <p>Vestibulum nunc lectus auctor quis. Natoque lectus tortor lacus, eu. Nunc feugiat nisl
+              maecenas nulla hac morbi. Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus
+              enim est. Vel dignissim morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/education.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="tab-pane fade" id="machine_shops" role="tabpanel" aria-labelledby="machine_shops-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">E-Commerce</h3>
+            <p>Curabitur auctor quam ut iaculis suscipit. Morbi ullamcorper tellus eu purus dictum
+              convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam
+              molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/ecommerce.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Sports -->
+      <div class="tab-pane fade" id="mcp" role="tabpanel" aria-labelledby="mcp-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Sports</h3>
+            <p>Etiam vehicula commodo nunc, ut tincidunt risus aliquam sit amet. Vivamus ut velit ut odio
+              malesuada tincidunt ut non eros. Curabitur vel quam varius, ullamcorper mi quis, ultrices
+              eros. Nam eget mi ut diam elementum facilisis vehicula eget augue.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/sports.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Construction -->
+      <div class="tab-pane fade" id="mwpls" role="tabpanel" aria-labelledby="mwpls-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Construction</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, nunc in iaculis
+              vestibulum, nunc ex convallis est, ut viverra velit sapien ac erat. Vivamus aliquet mi
+              tellus, vel viverra ex blandit sed. Sed blandit lobortis risus. Aliquam blandit cursus ex
+              sed iaculis.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/construction.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Medicine -->
+      <div class="tab-pane fade" id="PaperMills" role="tabpanel" aria-labelledby="PaperMills-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Medicine</h3>
+            <p>In vel nulla ac enim pellentesque tristique vel non dui. Integer vulputate ex leo, in
+              accumsan purus consectetur quis. Cras scelerisque orci vel dapibus volutpat. In et
+              consectetur enim. Maecenas lobortis viverra tortor, quis fermentum sem volutpat sit
+              amet.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/medicine.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Estate -->
+      <div class="tab-pane fade" id="powergeneration" role="tabpanel" aria-labelledby="powergeneration-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Real Estate</h3>
+            <p>Donec consequat nibh at urna tincidunt tempor. Integer quis lobortis felis. Nulla id quam
+              vestibulum, aliquam mauris vitae, auctor ex. Aliquam augue nulla, faucibus sed lacus ac,
+              placerat elementum nisi. Curabitur enim nunc, dictum et accumsan.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/real-estate.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wellness -->
+      <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+        <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+          <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+            <h3 class="mb-lg-4">Wellness</h3>
+            <p>Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque
+              malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Aenean varius lectus lectus.</p>
+          </div>
+          <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+            <img src="assets/img/services/industries/wellness.jpg"
+                 class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="footer border-top">
+  <div class="container text-center">
+    <p class="text-muted mb-0">&copy; All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Back to top button -->
+<a href="#top" class="btn-scroll-top" data-scroll>
+  <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+  <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+
+<!-- Vendor Scripts -->
+<script src="assets/vendor/rellax/rellax.min.js"></script>
+<script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main Theme Script -->
+<script src="assets/js/theme.min.js"></script>
+</body>
+</html>
