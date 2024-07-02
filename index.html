@@ -176,15 +176,15 @@
                             <a href="specialized.html" class="nav-link">Specialized</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link" onclick="openFAQ()">FAQ</a>
+                            <a href="#" class="nav-link" onclick="openFAQ(this)">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <script>
-                            function openFAQ() {
+                            function openFAQ(el) {
                                 // Open FAQ modal
-                                var modal = new bootstrap.Modal(document.querySelector('#faq-modal'));
+                                var modal = new bootstrap.Modal(document.querySelector('.modal'));
                                 modal.show();
                             }
                         </script>
@@ -589,7 +589,7 @@
         </div>
     </section>
 
-    <div id="faq-modal" class="modal" tabindex="-1">
+    <div class="modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
